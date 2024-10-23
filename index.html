@@ -21,13 +21,13 @@
             font-size: 36px;
             margin-bottom: 20px;
         }
-        .media-container {
+        .photos-container {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             gap: 20px;
             margin-bottom: 40px;
         }
-        .media-frame {
+        .photo-frame {
             width: 150px;
             height: 150px;
             background-color: white;
@@ -36,8 +36,7 @@
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        .media-frame img, 
-        .media-frame video {
+        .photo-frame img {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -63,30 +62,24 @@
 <body>
     <h1>Our Beautiful Memories</h1>
     
-    <div class="media-container">
-        <!-- 9 photo frames and 1 video frame -->
-        <div class="media-frame"><img src="photo1.jpg" alt="Memory 1"></div>
-        <div class="media-frame"><img src="photo2.jpg" alt="Memory 2"></div>
-        <div class="media-frame"><img src="photo3.jpg" alt="Memory 3"></div>
-        <div class="media-frame"><img src="photo4.jpg" alt="Memory 4"></div>
-        <div class="media-frame"><img src="photo5.jpg" alt="Memory 5"></div>
-        <div class="media-frame"><img src="photo6.jpg" alt="Memory 6"></div>
-        <div class="media-frame"><img src="photo7.jpg" alt="Memory 7"></div>
-        <div class="media-frame"><img src="photo8.jpg" alt="Memory 8"></div>
-        <div class="media-frame"><img src="photo10.jpg" alt="Memory 10"></div>
-        <!-- Video spot -->
-        <div class="media-frame">
-            <video controls>
-                <source src="video1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
+    <div class="photos-container">
+        <!-- 10 photo frames for your pictures -->
+        <div class="photo-frame"><img src="photo1.jpg" alt="Memory 1"></div>
+        <div class="photo-frame"><img src="photo2.jpg" alt="Memory 2"></div>
+        <div class="photo-frame"><img src="photo3.jpg" alt="Memory 3"></div>
+        <div class="photo-frame"><img src="photo4.jpg" alt="Memory 4"></div>
+        <div class="photo-frame"><img src="photo5.jpg" alt="Memory 5"></div>
+        <div class="photo-frame"><img src="photo6.jpg" alt="Memory 6"></div>
+        <div class="photo-frame"><img src="photo7.jpg" alt="Memory 7"></div>
+        <div class="photo-frame"><img src="photo8.jpg" alt="Memory 8"></div>
+        <div class="photo-frame"><img src="photo9.jpg" alt="Memory 9"></div>
+        <div class="photo-frame"><img src="photo10.jpg" alt="Memory 10"></div>
     </div>
     
     <div class="loving-message">
         <p>To my dearest Nada, words cannot express how much you mean to me. Every moment we've spent together has filled my heart with joy and love. I treasure these memories, and I look forward to creating many more with you. I love you, always and forever. ❤️</p>
     </div>
 
-    <footer>Made with love for the love of my life(modified after the break up)</footer>
+    <footer>Made with love for the love of my life</footer>
 </body>
 </html>
