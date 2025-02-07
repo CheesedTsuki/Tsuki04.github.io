@@ -3,83 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Memories</title>
+    <title>Be My Valentine</title>
     <style>
         body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #ffe6f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            width: 80%;
+            height: 80%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            background-color: white;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .polaroid {
+            background: white;
+            border: 10px solid white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .polaroid img {
+            width: 100%;
+            height: auto;
+            flex-grow: 1;
+        }
+        .polaroid p {
+            font-family: 'Dancing Script', cursive;
+            font-size: 24px;
+            color: #ff6699;
+            margin: 10px 0;
+        }
+        .flowers {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            margin: 0;
-            padding: 20px;
-            background: linear-gradient(to right, #ff9a9e, #fad0c4);
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        h1 {
-            color: #e91e63;
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-        .photos-container {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
             gap: 20px;
-            margin-bottom: 40px;
         }
-        .photo-frame {
+        .flowers img {
             width: 150px;
-            height: 150px;
-            background-color: white;
-            border: 4px solid #e91e63;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            height: auto;
         }
-        .photo-frame img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        .prompt {
+            font-size: 20px;
+            color: #ff6699;
+            text-align: center;
+            margin-top: 10px;
         }
-        .loving-message {
-            margin-top: 40px;
-            padding: 20px;
-            background-color: #fff;
-            border: 2px solid #e91e63;
-            border-radius: 10px;
-            max-width: 600px;
+        .prompt button {
             font-size: 18px;
-            color: #333;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-color: #ff6699;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
         }
-        footer {
-            margin-top: 20px;
-            font-size: 16px;
-            color: #e91e63;
+        .prompt button:hover {
+            background-color: #ff3366;
         }
     </style>
 </head>
 <body>
-    <h1>Our Beautiful Memories</h1>
-    
-    <div class="photos-container">
-        <!-- 10 photo frames for your pictures -->
-        <div class="photo-frame"><img src="photo1.jpg" alt="Memory 1"></div>
-        <div class="photo-frame"><img src="photo2.jpg" alt="Memory 2"></div>
-        <div class="photo-frame"><img src="photo3.jpg" alt="Memory 3"></div>
-        <div class="photo-frame"><img src="photo4.jpg" alt="Memory 4"></div>
-        <div class="photo-frame"><img src="photo5.jpg" alt="Memory 5"></div>
-        <div class="photo-frame"><img src="photo6.jpg" alt="Memory 6"></div>
-        <div class="photo-frame"><img src="photo7.jpg" alt="Memory 7"></div>
-        <div class="photo-frame"><img src="photo8.jpg" alt="Memory 8"></div>
-        <div class="photo-frame"><img src="photo9.jpg" alt="Memory 9"></div>
-        <div class="photo-frame"><img src="photo10.jpg" alt="Memory 10"></div>
+    <div class="container">
+        <div class="polaroid">
+            <img src="chichi.jpg" alt="Your Crush">
+            <p>Will you be my Valentine?</p>
+        </div>
+        <div class="flowers">
+            <img src="https://example.com/flower-image.jpg" alt="Flowers">
+            <div class="prompt">
+                <p>What do you say?</p>
+                <button onclick="alert('Yessss! 🥰')">Yes</button>
+                <button onclick="alert('HELL YEAH !!')">No</button>
+            </div>
+        </div>
     </div>
-    
-    <div class="loving-message">
-        <p>To my dearest Nada, words cannot express how much you mean to me. Every moment we've spent together has filled my heart with joy and love. I treasure these memories, and I look forward to creating many more with you. I love you, always and forever. ❤️</p>
-    </div>
-
-    <footer>Made with love for the love of my life</footer>
 </body>
 </html>
